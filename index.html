@@ -22,6 +22,7 @@
   <!-- Libraries CSS Files -->
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/fontawesome/css/all.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
 
@@ -34,6 +35,10 @@
     $(document).ready(function () {
       $("#about-desc").load("content/desc.txt");
     });
+
+    function donate() {
+      window.open("http://paypal.me/PIUMXR2", "Donar", "width=350,height=500", "toolbar=0,location=0");
+    }
   </script>
 
   <!-- =======================================================
@@ -121,7 +126,7 @@
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" alt="">
+            <img src="img/about-img.png" alt="">
           </div>
 
           <div class="col-lg-6 content wow fadeInRight">
@@ -180,7 +185,7 @@
             <div class="row">
 
               <div class="col-lg-6 col-md-6 box wow fadeInRight">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+                <div class="icon"><i class="fab fa-facebook-messenger"></i></div>
                 <h4 class="title"><a href="">Lorem Ipsum</a></h4>
                 <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
                   occaecati cupiditate non provident clarida perendo.</p>
@@ -452,14 +457,15 @@
                 <li><i class="ion-android-checkmark-circle"></i> Te vuelves Pro</li>
                 <li><i class="ion-android-checkmark-circle"></i> Cualquier cantidad es aceptada</li>
               </ul>
-              <a href="#download" class="get-started-btn scrollto">Vamos!</a>
+              <a href="#download" onclick="donate()" class="get-started-btn scrollto">Vamos! <i
+                  class="fab fa-paypal"></i></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6">
             <div class="box wow fadeInRight">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>49<span> month</span></h4>
+              <h3>Desarrollador</h3>
+              <h4><sup>$</sup>100<span> MXN</span></h4>
               <ul>
                 <li><i class="ion-android-checkmark-circle"></i> Quam adipiscing vitae proin</li>
                 <li><i class="ion-android-checkmark-circle"></i> Nec feugiat nisl pretium</li>
@@ -467,7 +473,9 @@
                 <li><i class="ion-android-checkmark-circle"></i> Pharetra massa massa ultricies</li>
                 <li><i class="ion-android-checkmark-circle"></i> Massa ultricies mi quis hendrerit</li>
               </ul>
-              <a href="#" class="get-started-btn">Get Started</a>
+              <a href="#download" class="get-started-btn scrollto" onclick="donate()">Vamos!
+                <i class="fab fa-paypal"></i>
+              </a>
             </div>
           </div>
 
@@ -487,10 +495,12 @@
             <p class="cta-text"> El juego se encuentra alojado en el servidor de MEGA y los archivos se encuentran
               protegidos con contraseña para mantener su seguridad. La contraseña la puedes conseguir mandandome un
               mensaje directo a la pagina oficial del juego o dando clic al boton de abajo.</p>
-            <a class="cta-btn " href="https://m.me/PIUMXR2">Contraseña</a>
+            <a class="cta-btn facebook" href="https://m.me/PIUMXR2">Contraseña <i
+                class="fab fa-facebook-messenger"></i></a>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://mega.nz/#F!VKwD2ICD!ic9Q-est0jX5pbFLGIGedg">Descargar</a>
+            <a class="cta-btn align-middle" href="https://mega.nz/#F!VKwD2ICD!ic9Q-est0jX5pbFLGIGedg">Descargar <i
+                class="fa fa-cloud-download-alt"></i></a>
           </div>
         </div>
 
@@ -543,15 +553,15 @@
       <div class="container">
 
         <div class="section-header">
-          <h3 class="section-title">Preguntas Frecuentes</h3>
+          <h3 class="section-title">Preguntas Frecuentes <i class="fa fa-question-circle"></i></h3>
           <span class="section-divider"></span>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque</p>
+          <p class="section-description">Aqui se encuentran las cuestiones más preguntadas y las respuestas a la duda
+            que pudiera haber surgido, ademas de la resolucion a los errores más comunes que pudieran surgir</p>
         </div>
 
         <ul id="faq-list" class="wow fadeInUp">
           <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i
+            <a data-toggle="collapse" class="collapsed" href="#faq1">¿Todavia no hay pregunt? <i
                 class="ion-android-remove"></i></a>
             <div id="faq1" class="collapse" data-parent="#faq-list">
               <p>
@@ -714,11 +724,12 @@
               <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque
                 felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
               <div class="social-links">
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                <a href="https://www.facebook.com/PIUMXR2/" class="facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                <!-- <a href="#" class="twitter"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.facebook.com/PIUMXR2/" class="facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://m.me/PIUMXR2" class="facebook"><i class="fab fa-facebook-messenger"></i></a>
+                <!-- <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="fab fa-google-plus"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a> -->
               </div>
             </div>
           </div>
@@ -740,7 +751,7 @@
       <div class="row">
         <div class="col-lg-6 text-lg-left text-center">
           <div class="copyright">
-            &copy; Copyright <strong>PIU MXR2</strong>. Derechos Reservados
+            &copy; Copyright <strong>PIU MXR 2020</strong>. Derechos Reservados
           </div>
           <div class="credits">
             <!--
