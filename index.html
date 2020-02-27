@@ -28,6 +28,14 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("#about-desc").load("content/desc.txt");
+    });
+  </script>
+
   <!-- =======================================================
     Theme Name: Avilon
     Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
@@ -106,9 +114,8 @@
         <div class="section-header">
           <h3 class="section-title">Acerca de</h3>
           <span class="section-divider"></span>
-          <p class="section-description">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
-            sunt in culpa qui officia deserunt mollit anim id est laborum
+          <p id="about-desc" class="section-description">
+
           </p>
         </div>
 
