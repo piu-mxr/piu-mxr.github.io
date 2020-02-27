@@ -691,7 +691,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #download {
   overflow: hidden;
-  background: linear-gradient( #7825d85b, #3e0e7471), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient( #7825d85b, #3e0e7471), url(../img/call-to-action-bg.png) fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
