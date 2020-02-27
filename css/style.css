@@ -1,4 +1,4 @@
-/*
+                                                                /*
   Theme Name: Avilon
   Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
   Author: BootstrapMade.com
@@ -127,9 +127,18 @@ h6 {
 #intro {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #110d13d2, #310366d8), url("../img/intro-bg.jpg") center top no-repeat;
+  background: linear-gradient(45deg, #110d13d2, #310366d8), center top no-repeat;
   background-size: cover;
   position: relative;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -100;
 }
 
 #intro .intro-text {
